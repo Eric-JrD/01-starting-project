@@ -1,6 +1,6 @@
-import Header from './Header.jsx';
+import Header from './components/Header.jsx';
 import UserData from './UserData.jsx';
-import CoreConcept from './CoreConcept.jsx';
+import CoreConcept from './components/CoreConcept.jsx';
 import componentsImg from './assets/components.png';
 import { CORE_CONCEPTS } from './data.js';
 
@@ -17,7 +17,7 @@ function App() {
             <CoreConcept {...CORE_CONCEPTS[1]}/>
             <CoreConcept {...CORE_CONCEPTS[2]}/>
             <CoreConcept {...CORE_CONCEPTS[3]}/>
-
+{/* the ... is called spread operator */}
           </ul>
 
         </section>
