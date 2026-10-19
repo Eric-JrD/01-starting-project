@@ -2,8 +2,8 @@ import Header from './components/Header/Header.jsx';
 import UserData from './UserData.jsx';
 import CoreConcept from './components/CoreConcept/CoreConcept.jsx';
 import componentsImg from './assets/components.png';
-
 import { CORE_CONCEPTS } from './assets/data.js';
+import TabButton from './components/TabButton/TabButton.jsx';
 
 
 function App() {
@@ -20,6 +20,15 @@ function App() {
             <CoreConcept {...CORE_CONCEPTS[3]}/>
 {/* the ... is called spread operator */}
           </ul>
+        </section>
+        <section id="examples">
+          <h2>Examples</h2>
+          <menu>
+            <TabButton>Item 1</TabButton>
+            <TabButton>Item 2</TabButton>
+            <TabButton>Item 3</TabButton>
+            
+          </menu>
 
         </section>
       </main>
