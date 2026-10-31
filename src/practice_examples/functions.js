@@ -57,3 +57,9 @@ let addArrow = (x, y) => {
 
 let addArrowShort = (x , y) => x + y;
 let squared = x => x*x;
+
+function myFunction(func){
+    func();
+    console.log("done");
+}
+myFunction((x,y) => {x+y});
