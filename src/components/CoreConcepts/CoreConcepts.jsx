@@ -3,11 +3,16 @@ import CoreConcept from "./CoreConcept";
 
 export default function CoreCConcepts(){
     return(
-        <section id="core-concepts">
-            <h2>Time to get started!</h2>
+        // <section id="core-concepts">
+        //     <h2>Time to get started!</h2>
+        //     <ul>
+        //         {CORE_CONCEPTS.map((conceptItem)=><CoreConcept {...conceptItem}/>)};
+        //     </ul>
+        // </section>
+        <Section title="Time to get started">
             <ul>
                 {CORE_CONCEPTS.map((conceptItem)=><CoreConcept {...conceptItem}/>)};
             </ul>
-        </section>
+        </Section>
     );
 }
