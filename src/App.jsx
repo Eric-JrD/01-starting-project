@@ -1,10 +1,11 @@
 import Header from './components/Header/Header.jsx';
 import UserData from './UserData.jsx';
-import CoreConcept from './components/CoreConcept/CoreConcept.jsx';
+import CoreConcept from './components/CoreConcepts/CoreConcept.jsx';
 import componentsImg from './assets/components.png';
 import { CORE_CONCEPTS, EXAMPLES } from './assets/data.js';
 import TabButton from './components/TabButton/TabButton.jsx';
-import {useState} from 'react';
+import {useState, Fragment} from 'react';
+import CoreCConcepts from './components/CoreConcepts/CoreConcepts.jsx';
 
 function App() {
   
@@ -15,19 +16,10 @@ function App() {
         setSelectedTopic(selectedButton);
   }
   return (
-    <div>
+    <>
       <Header />
       <main>
-        <section id="core-concepts">
-          <h2>Time to get started!</h2>
-          <ul>
-            <CoreConcept {...CORE_CONCEPTS[0]}/>
-            <CoreConcept {...CORE_CONCEPTS[1]}/>
-            <CoreConcept {...CORE_CONCEPTS[2]}/>
-            <CoreConcept {...CORE_CONCEPTS[3]}/>
-{/* the ... is called spread operator */}
-          </ul>
-        </section>
+        <CoreConcepts/>
         <section id="examples">
           <h2>Examples</h2>
           <menu>
@@ -47,12 +39,12 @@ function App() {
               <code>
                 {EXAMPLES[selectedTopic].code}
               </code>
-            </pre>
+            </pre>  
           </div>)}
 
         </section>
       </main>
-    </div>
+    </>
   );
 }
 
