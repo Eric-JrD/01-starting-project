@@ -9,5 +9,5 @@ export default function CoreCConcepts(){
                 {CORE_CONCEPTS.map((conceptItem)=><CoreConcept {...conceptItem}/>)};
             </ul>
         </section>
-    )
+    );
 }
